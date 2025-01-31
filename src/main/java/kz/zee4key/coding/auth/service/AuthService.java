@@ -1,15 +1,17 @@
 package kz.zee4key.coding.auth.service;
 
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
 import kz.zee4key.coding.auth.dto.LoginRequest;
 import kz.zee4key.coding.auth.dto.SignupRequest;
 import kz.zee4key.coding.auth.model.Role;
 import kz.zee4key.coding.auth.model.User;
 import kz.zee4key.coding.auth.repository.UserRepository;
 import kz.zee4key.coding.security.JwtTokenProvider;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Service;
-import java.util.Set;
 
 @Service
 public class AuthService {
